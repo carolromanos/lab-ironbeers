@@ -1,0 +1,14 @@
+<div class="beer-partial">
+    {{!-- we are creating partial because this piece of code will 
+    be repeated multiple times through the whole app   --}}
+    <div class="partial-img">
+        <img src="{{ image_url }}" width="200" alt="">
+    </div>
+    <div class="partial-text">
+        <h3>Name: {{ name }}</h3>
+        <h4>Tagline: {{ tagline }}</h4>
+        <p>Description: {{ description }}</p>
+        <p>First brewed: {{ first_brewed }}</p>
+        <a href="/{{id}}">See more</a>
+    </div>
+</div>
